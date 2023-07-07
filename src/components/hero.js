@@ -1,22 +1,33 @@
 import React from "react";
-
-const logo = "https://cdn.auth0.com/blog/auth0-react-sample/assets/logo.png";
+import logo from "../assets/enterprise-eth.webp";
 
 const Hero = () => (
   <div className="text-center hero">
-    <img className="mb-3 app-logo" src={logo} alt="React logo" width="120" />
-    <h1 className="mb-4">React Sample Project</h1>
-    <p className="lead">
-      This is a sample application that demonstrates an authentication flow for
-      an SPA, using{" "}
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://auth0.com/docs/quickstart/spa/react"
-      >
-        React
-      </a>
-    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          {" "}
+          <img
+            className="mb-3 app-logo"
+            src={logo}
+            alt="React logo"
+            width="400"
+          />
+        </div>
+        <div class="col-sm m-auto">
+          <h1 className="mb-2">Ethereum App</h1>
+          <p className="lead mb-6 text-left">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <button type="button" className="btn btn-primary mt-4">
+            Iniciar sesión
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 );
 

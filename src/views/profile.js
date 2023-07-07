@@ -3,7 +3,7 @@ import React from "react";
 const Profile = () => {
   return (
     <div>
-      <h1>Profile</h1>
+      <h1>Welcome to Etherum App!</h1>
       <p>
         You use will use an ID Token to get the profile information of a
         logged-in user.
