@@ -9,7 +9,7 @@ const MainNav = () => (
       className="nav-link"
       activeClassName="router-link-exact-active"
     >
-      Home
+      Iniciar sesión
     </NavLink>
   </div>
 );
