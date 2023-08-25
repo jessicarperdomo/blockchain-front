@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/enterprise-eth.webp";
 import { Amplify, Auth, Hub } from "aws-amplify";
-import { CognitoHostedUIIdentityProvider } from "@aws-amplify/auth";
 import awsConfig from "../aws-exports";
+
 Amplify.configure({ Auth: awsConfig });
 
 const Hero = () => {
