@@ -1,6 +1,14 @@
+'use client';
+
+import awsConfig from '../aws-exports';
+import { Auth, Amplify } from 'aws-amplify';
 import Image from 'next/image';
 
+Amplify.configure({ Auth: awsConfig });
 export default function Hero() {
+  function handleClick() {
+    Auth.federatedSignIn();
+  }
   return (
     <div className="text-center hero">
       <div className="container">
@@ -21,13 +29,14 @@ export default function Hero() {
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. and scrambled
-              it to make a type specimen book. and scrambled it to make a type
-              specimen book. and scrambled it to make a type specimen book. and
-              scrambled it to make a type specimen book. and scrambled it to
-              make a type specimen book.
+              it to make a type specimen book.
             </p>
-            <button type="button" className="btn btn-primary mt-4">
-              Iniciar sesión
+
+            <button
+              type="button"
+              className="btn btn-primary mt-4"
+              onClick={() => handleClick()}>
+              Iniciar sesión con Google
             </button>
           </div>
         </div>
