@@ -1,6 +1,13 @@
 import Image from 'next/image';
+import {Amplify, Auth} from "aws-amplify";
+import awsExports from "@/app/aws-exports";
 
 export default function Hero() {
+  Amplify.configure({ Auth: awsExports });
+  function handleClick() {
+    console.log('increment like count');
+  }
+
   return (
     <div className="text-center hero">
       <div className="container">
