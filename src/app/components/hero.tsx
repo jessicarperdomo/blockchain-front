@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import {Amplify, Auth} from "aws-amplify";
-import awsExports from "@/app/aws-exports";
+// import awsExports from "@/app/aws-exports";
 
 export default function Hero() {
-  Amplify.configure({ Auth: awsExports });
+  // Amplify.configure({ Auth: awsExports });
   function handleClick() {
     console.log('increment like count');
   }
