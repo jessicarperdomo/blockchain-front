@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import {Amplify, Auth} from "aws-amplify";
+import { Amplify, Auth } from 'aws-amplify';
 // import awsExports from "@/app/aws-exports";
 
 export default function Hero() {
