@@ -1,13 +1,15 @@
+'use client';
+
+import { Button } from '@mui/joy';
+import awsConfig from '../aws-exports';
+import { Auth, Amplify } from 'aws-amplify';
 import Image from 'next/image';
-import { Amplify, Auth } from 'aws-amplify';
-// import awsExports from "@/app/aws-exports";
 
+Amplify.configure({ Auth: awsConfig });
 export default function Hero() {
-  // Amplify.configure({ Auth: awsExports });
   function handleClick() {
-    console.log('increment like count');
+    Auth.federatedSignIn();
   }
-
   return (
     <div className="text-center hero">
       <div className="container">
@@ -23,19 +25,15 @@ export default function Hero() {
           <div className="col-sm m-auto">
             <h1 className="mb-2">Ethereum App</h1>
             <p className="lead mb-6 text-left">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              {/* eslint-disable-next-line react/no-unescaped-entities */}
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. and scrambled
-              it to make a type specimen book. and scrambled it to make a type
-              specimen book. and scrambled it to make a type specimen book. and
-              scrambled it to make a type specimen book. and scrambled it to
-              make a type specimen book.
+              La web es el futuro, y tu puedes estar en el
             </p>
-            <button type="button" className="btn btn-primary mt-4">
-              Iniciar sesión
-            </button>
+
+            <Button
+              color="neutral"
+              variant="solid"
+              onClick={() => handleClick()}>
+              Iniciar
+            </Button>
           </div>
         </div>
       </div>

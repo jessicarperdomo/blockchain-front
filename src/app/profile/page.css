@@ -1,0 +1,54 @@
+.bc-profile {
+    display: flex;
+    margin: 5rem 0 0 0;
+    padding: 1rem;
+
+    color: white;
+}
+
+.bc-profile-left-side {
+    max-width: 40rem;
+    padding: 1rem;
+}
+
+.bc-profile-left-side {
+    padding: 1rem;
+
+}
+
+.bb-container-description {
+    font-size: 2rem;
+
+}
+
+.bc-profile-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    width: 350px;
+
+    padding: 24px;
+    margin: auto;
+    border-radius: 30px;
+    background-color: #1D1D1D;
+    color: white;
+}
+
+.bc-text-first-level {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    margin: 0;
+    text-align: center;
+
+}
+
+.bc-text-second-level {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+.bc-profile-avatar {
+    height: 419px
+}

@@ -1,4 +1,4 @@
-import MainNav from '@/app/components/main-nav';
+import MainNav from '@/app/components/main-nav/main-nav';
 
 export default function NavBar() {
   return (
