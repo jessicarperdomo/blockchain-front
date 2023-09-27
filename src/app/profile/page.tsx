@@ -2,13 +2,14 @@
 
 import MainNav from '@/app/components/main-nav/main-nav';
 import React from 'react';
+import Image from 'next/image';
+
 import './page.css';
 
 export default function Profile() {
   const userDescription =
     'Descubre tu NFT y embarcate hacia el futuro de la tecnología e innovación explorando el mundo de la WEB3';
-  const avatar =
-    'https://s3-alpha-sig.figma.com/img/a99f/37de/e208e44903197a0744612d9a3882534c?Expires=1696809600&Signature=DpnsiqZwOvMopzKSWXiHiGL30YfnibjaRokhk0pvM~wz73Ij83lrvxoFgQHHYpOZhHsAHBzAni7A0~6VoqAcfWvQywV2-lVceOY4sBH8bOaIJ5lrbLcOcUmFCIn8QEkGgfiZIoOyA81s9T5vH5R-Lx5wfILzWdsfr0vQCYZhosvJxUFFBNuMul3Gq4RUKdFAjfR2fJmxDvS0qp0r9pPo~uOKkmEg2YHWvbanyKKB0kEzoPBFEKQVqfh24ESJoOsUVsrmbnzAYLsPVBjRq9GNYfXnjGatiqKpXIhvGemdchy~Bh~SyjbBTNp3s4hvvptZMthQ-kfKJwiIrr5lr2cNjA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4';
+  const avatar = '/avatar.png';
 
   const [loading, setLoading] = React.useState(false);
 
@@ -40,14 +41,15 @@ export default function Profile() {
 
   const imagesContainer = (
     <>
-      <img
-        className="bc-profile-avatar"
+      <Image
+        height={419}
+        width={419}
         src={
           loading
             ? 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='
             : avatar
         }
-        alt=""
+        alt="avatar"
       />
     </>
   );
