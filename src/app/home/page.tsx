@@ -1,10 +1,10 @@
 import { Fragment } from 'react';
-import Hero from '@/app/components/hero';
+import Landing from '@/app/components/landing/landing';
 
 export default function Home() {
   return (
     <Fragment>
-      <Hero />
+      <Landing />
     </Fragment>
   );
 }

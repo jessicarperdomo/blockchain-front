@@ -1,0 +1,17 @@
+.bc-text-light {
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 0 2rem;
+    color: white;
+    margin: 0;
+}
+
+.bc-landing__actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bc-landing {
+    padding: 6rem 8rem;
+
+}

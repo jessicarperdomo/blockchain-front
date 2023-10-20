@@ -1,9 +1,6 @@
 .dashboard {
     background-color: #131313;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 16px;
     padding: 24px;
 
 }
@@ -13,3 +10,9 @@
     font-weight: 600;
     color: white;
 }
+
+.bc-menu-items {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 0 auto;}
