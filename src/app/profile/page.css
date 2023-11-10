@@ -1,6 +1,6 @@
 .bc-profile {
     display: flex;
-    padding: 1rem;
+    padding: 16px;
     color: white;
     height: 85vh;
     background-color: #131313;
@@ -8,13 +8,13 @@
 }
 
 .bc-profile-left-side {
-    padding: 1rem;
-    margin: 6rem 8rem;
+    padding: 16px;
+    margin: 1rem;
 }
 
 .bc-profile-right-side {
-    padding: 1rem;
-    margin: 6rem 0 0 0;
+    padding: 16px;
+    margin: 1rem 0 0 0;
 }
 
 .bb-container-description {
