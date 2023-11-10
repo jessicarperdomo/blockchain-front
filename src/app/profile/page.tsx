@@ -5,6 +5,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import './page.css';
+declare var window: any;
 
 export default function Profile() {
   const userDescription =
@@ -12,7 +13,15 @@ export default function Profile() {
   const avatar = '/avatar.png';
 
   const [loading, setLoading] = React.useState(false);
-
+  React.useEffect(() => {
+    if (window?.ethereum) {
+      window.ethereum
+        .request({
+          method: 'eth_requestAccounts',
+        })
+        .then((accounts: any) => console.log(accounts));
+    }
+  }, []);
   const userDetails = (
     <>
       <div className="bc-profile-container">
